@@ -1,0 +1,4 @@
+FROM openjdk:8
+ADD target/service-zuul-0.0.1-SNAPSHOT.jar service-zuul-0.0.1-SNAPSHOT.jar
+EXPOSE 1001
+Entrypoint ["java", "-jar","service-zuul-0.0.1-SNAPSHOT.jar"]

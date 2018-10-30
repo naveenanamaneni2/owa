@@ -1,0 +1,4 @@
+FROM openjdk:8
+ADD target/service-eureka-0.0.1-SNAPSHOT.jar service-eureka-0.0.1-SNAPSHOT.jar
+EXPOSE 9001
+Entrypoint ["java", "-jar","service-eureka-0.0.1-SNAPSHOT.jar"]
